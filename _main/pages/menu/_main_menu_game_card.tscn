@@ -1,0 +1,213 @@
+[gd_scene format=3 uid="uid://bhb36y8g0kc77"]
+
+[ext_resource type="Script" uid="uid://dusk3dg7juqmn" path="res://_main/pages/menu/_main_menu_game_card.gd" id="1_2ad4e"]
+[ext_resource type="Theme" uid="uid://cc2lxowe1hiv5" path="res://__x/theme/theme_main.tres" id="1_3xlp1"]
+[ext_resource type="StyleBox" uid="uid://coty5g7togwp4" path="res://__x/theme/box_popup_panel.tres" id="3_4nht6"]
+[ext_resource type="Texture2D" uid="uid://cpg00obw7bvtx" path="res://__x/_assets/icon_main/icon_main_240.png" id="3_pug78"]
+[ext_resource type="PackedScene" uid="uid://2otk2xv0darj" path="res://__x/_ui/_buttons/_ui_button_icon.tscn" id="3_rsb4e"]
+[ext_resource type="Texture2D" uid="uid://b8gv50cqili7w" path="res://__x/_assets/icon_buttons/icon_options.png" id="4_c7ux2"]
+[ext_resource type="Texture2D" uid="uid://cnm5gy61s4lmi" path="res://__x/_assets/icon_buttons/icon_play.png" id="4_w8368"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gg3w2"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+
+[node name="card" type="PanelContainer" unique_id=1923437691]
+custom_minimum_size = Vector2(492, 240)
+clip_contents = true
+offset_right = 492.0
+offset_bottom = 252.0
+theme = ExtResource("1_3xlp1")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_gg3w2")
+script = ExtResource("1_2ad4e")
+
+[node name="panel" type="Panel" parent="." unique_id=731299383]
+custom_minimum_size = Vector2(480, 240)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("3_4nht6")
+
+[node name="cover" type="TextureRect" parent="panel" unique_id=1175293555]
+self_modulate = Color(0.78431374, 0.78431374, 0.78431374, 1)
+custom_minimum_size = Vector2(220, 220)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -250.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_pug78")
+expand_mode = 1
+
+[node name="info" type="VBoxContainer" parent="panel" unique_id=1587001498]
+layout_mode = 0
+offset_left = 236.543
+offset_top = 17.0
+offset_right = 470.5432
+offset_bottom = 179.0
+
+[node name="title" type="Label" parent="panel/info" unique_id=1059692526]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8008302, 0.21221352, 0.13750279, 1)
+theme_override_font_sizes/font_size = 22
+text = "awfawfawfwdawawfawfawfawf"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 5
+
+[node name="_s" type="HSeparator" parent="panel/info" unique_id=1337265312]
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+
+[node name="box" type="Control" parent="panel/info" unique_id=1732558937]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="h" type="Label" parent="panel/info/box" unique_id=1826169240]
+self_modulate = Color(0.9411765, 0.9411765, 0.9411765, 1)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 63.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "KEY_VERSION"
+vertical_alignment = 1
+
+[node name="version" type="Label" parent="panel/info/box" unique_id=304175452]
+self_modulate = Color(0.9411765, 0.9411765, 0.9411765, 1)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -233.0
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "version"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="box2" type="Control" parent="panel/info" unique_id=1796871971]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="h" type="Label" parent="panel/info/box2" unique_id=1738491526]
+self_modulate = Color(0.9411765, 0.9411765, 0.9411765, 1)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 63.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "KEY_PLAYED"
+vertical_alignment = 1
+
+[node name="b" type="HBoxContainer" parent="panel/info/box2" unique_id=1673693221]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -85.0
+offset_top = -12.0
+offset_bottom = 12.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 2
+
+[node name="play_time" type="Label" parent="panel/info/box2/b" unique_id=1041519424]
+self_modulate = Color(0.9411765, 0.9411765, 0.9411765, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "00:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="hrs" type="Label" parent="panel/info/box2/b" unique_id=33960674]
+self_modulate = Color(0.9411765, 0.9411765, 0.9411765, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "KEY_HOURS"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="box3" type="Control" parent="panel/info" unique_id=507924226]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="h" type="Label" parent="panel/info/box3" unique_id=1639629794]
+self_modulate = Color(0.9411765, 0.9411765, 0.9411765, 1)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 63.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "KEY_LAST_PLAY"
+vertical_alignment = 1
+
+[node name="last_play" type="Label" parent="panel/info/box3" unique_id=1445878491]
+self_modulate = Color(0.9411765, 0.9411765, 0.9411765, 1)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -233.0
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "00/00/00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="opts" type="HBoxContainer" parent="panel" unique_id=676997724]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -111.755005
+offset_top = -53.768997
+offset_right = -11.755005
+offset_bottom = -8.768997
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 2
+
+[node name="b_opts" parent="panel/opts" unique_id=809081190 instance=ExtResource("3_rsb4e")]
+self_modulate = Color(0.047, 0.047, 0.047, 0.235)
+layout_mode = 2
+_texture = ExtResource("4_c7ux2")
+
+[node name="b_play" parent="panel/opts" unique_id=2066708692 instance=ExtResource("3_rsb4e")]
+self_modulate = Color(0.047, 0.047, 0.047, 0.235)
+layout_mode = 2
+_texture = ExtResource("4_w8368")

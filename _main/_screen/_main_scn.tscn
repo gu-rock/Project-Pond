@@ -1,0 +1,4162 @@
+[gd_scene format=3 uid="uid://bf1iri4wc861h"]
+
+[ext_resource type="Script" uid="uid://ljoyx8hjgfm4" path="res://_main/_screen/_main_scn.gd" id="1_ollms"]
+[ext_resource type="Theme" uid="uid://cc2lxowe1hiv5" path="res://__x/theme/theme_main.tres" id="2_pev67"]
+[ext_resource type="PackedScene" uid="uid://b3nuh5ff1mtvu" path="res://_main/bg/_audio_dance.tscn" id="5_ljvqm"]
+[ext_resource type="Script" uid="uid://0gaaxskdfgyv" path="res://_main/bg/_main_menu_bg.gd" id="5_yppl3"]
+[ext_resource type="Script" uid="uid://bih4jvjylk0j8" path="res://_main/bg/_main_menu_bg_editor.gd" id="6_e3io5"]
+[ext_resource type="Material" uid="uid://byhgfkd4c4gvf" path="res://_main/bg/_bg_prope_mat.tres" id="6_ljvqm"]
+[ext_resource type="FontVariation" uid="uid://dkqjci0mqqgsl" path="res://__x/fonts/font_main.tres" id="7_e3io5"]
+
+[sub_resource type="Environment" id="Environment_6hpi6"]
+ambient_light_source = 1
+reflected_light_source = 1
+tonemap_mode = 4
+glow_enabled = true
+glow_intensity = 1.2
+glow_bloom = 0.6
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.078431375, 0.078431375, 0.078431375, 1)
+fog_density = 1.0
+fog_depth_curve = 0.12
+fog_depth_begin = 0.0
+fog_depth_end = 180.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ljvqm"]
+size = Vector3(2.4, 10, 2.4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ljvqm"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3io5"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hpi6"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81ra5"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7b1tc"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0c7iq"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lgdwc"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uu8pa"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81087"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wju1s"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3nnqp"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5qny4"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ok43w"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0550s"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hi80b"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjnnj"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rqo5k"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dtt8p"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yvu38"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c7evr"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25tjh"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tkhkw"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2aax"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5fgmp"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_03w2t"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_14j1k"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f6m1r"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tmeg7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a5ndl"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hicw7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a21b3"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k3dey"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ab28e"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qpuox"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kjok"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fl3hk"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eei13"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jrg2i"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_innjd"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8on1x"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n05j4"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rqlgl"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a2wss"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n14h7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2bxe"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vrmg5"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uixxx"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_56vuc"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hj5oi"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8sks"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dyn48"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8h7yg"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ockx"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i55he"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ng8r4"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vpa5q"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_od7ev"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uen53"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_858j7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wc3mi"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o5xy2"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cwgds"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsrhe"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k6k0v"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dcj5n"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dgd4h"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_618og"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2yxpp"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hc4tl"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ogpoo"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xmvvk"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6be6b"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rirx0"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wiaok"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q0dog"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ose27"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hwu4"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0pvd2"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_femfa"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u86t8"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qt813"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7xnwa"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbl3h"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u70ht"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m6io0"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_su26d"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_whgqy"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ed03p"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tg1u1"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k1i3v"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q2bkh"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bhos1"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mqtwa"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dqbkf"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ba3so"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lywtk"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ju770"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbmfb"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81t1v"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xlqmb"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ptvbb"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7x2uk"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t5qxx"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ttpra"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8wd55"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lifoo"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ry8fp"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cr86j"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ix37g"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lae7x"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6b3bb"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_serm4"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yacrt"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n0at6"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_80jsu"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7y6nn"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v7yoc"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lqd8"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8iuou"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3ee1"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xotmg"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o3gud"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n55r0"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_064cg"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_koyfj"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k84f8"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmg8l"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7q0he"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfx7m"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iax7b"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8o2aq"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rcdve"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j34tm"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2qpv"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5qo3m"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_twvih"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xdcex"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7sfko"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_icmo7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fge01"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6s365"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dxsa"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jpttr"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7tna"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bmolj"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hoywn"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2u6y8"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l143v"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jewx"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bg653"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_musc0"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmchn"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8rq02"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e7k14"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ber5n"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y5v2r"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eqgj8"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv0s3"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_46o4y"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ac1d"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16yb2"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4icrh"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jdhsi"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wn1lb"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fxbjp"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c55kb"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pm4od"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75qwi"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oi3cu"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ennji"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wn805"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hcljl"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_skjff"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o8uw0"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wegn7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oudux"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d70o7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tncpf"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ukv21"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gxg6d"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rguej"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ef4nw"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dh8ft"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rmi0p"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ksolp"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j3rn2"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2svuk"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_utl3d"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lq0yd"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ds4jx"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i38i4"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h5f8e"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6ve1"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cjj6d"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qnoi4"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uvllk"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7eijw"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hdto6"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l10ln"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lpvfb"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c7aa"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qclj0"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gvmi6"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqn6s"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b758o"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfx22"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1nkao"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pngab"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v1628"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hnyrh"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dd81q"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wu8rd"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21qbr"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tytvq"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4i8tc"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpk4j"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ko4dl"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_addo0"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dogx7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5xjxy"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4x657"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2chds"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m26e6"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rlqf1"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_stnus"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nh0rt"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s3yy7"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5txgh"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jdj3u"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_igpx0"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sadat"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1dqrj"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qnuxx"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drsk6"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0rbd"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_emx53"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uo5mn"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ufye1"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8ich"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2q4ia"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5mt4n"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qaq4n"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_72g0g"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18rd2"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ikniw"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bqjtd"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0uq2i"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_61anp"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cewjf"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mrrom"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7sflu"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ar31"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cnyh1"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m373l"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tns71"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1dek"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jyula"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_013wg"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_worto"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vq8os"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_upbxk"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fdj41"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cuvd8"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1fhs6"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjfhv"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hba5b"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd27a"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbqtq"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0kso2"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ejkxy"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ixkha"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_38q63"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m16hw"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7pv86"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_skubm"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3q6l"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7pymf"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_na4ug"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rsdkc"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ot5qi"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ovp2p"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ktwui"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sy0ew"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bl0go"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3rthu"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aoslv"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8xuhw"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmwmt"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tp5t4"]
+disable_ambient_light = true
+albedo_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+emission_enabled = true
+emission = Color(0.8503372, 0.8503371, 0.8503371, 1)
+emission_energy_multiplier = 1.2
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f12rc"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ljvqm"]
+material = SubResource("StandardMaterial3D_f12rc")
+size = Vector2(100, 100)
+
+[node name="main" type="Node" unique_id=230472359]
+script = ExtResource("1_ollms")
+
+[node name="canvas" type="CanvasLayer" parent="." unique_id=2006984219]
+
+[node name="bg" type="ColorRect" parent="canvas" unique_id=1192820163]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_pev67")
+color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+
+[node name="version" type="Label" parent="canvas" unique_id=59264845]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -111.44501
+offset_top = -32.0
+offset_right = -35.445007
+offset_bottom = -9.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("2_pev67")
+theme_override_font_sizes/font_size = 15
+text = "V. 00.00.00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="border" type="Control" parent="canvas" unique_id=923929029]
+modulate = Color(0.9411765, 0.9411765, 0.9411765, 1)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 36.0
+offset_top = 36.0
+offset_right = -36.0
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="Node3D" parent="." unique_id=1526725272]
+script = ExtResource("5_yppl3")
+_material = ExtResource("6_ljvqm")
+
+[node name="audio_dance" parent="BG" unique_id=1935196752 instance=ExtResource("5_ljvqm")]
+
+[node name="env" type="WorldEnvironment" parent="BG" unique_id=254197243]
+environment = SubResource("Environment_6hpi6")
+
+[node name="camera" type="Camera3D" parent="BG" unique_id=1524162489]
+transform = Transform3D(0.99974215, -0.0117918495, -0.019403335, 0.02209392, 0.30822608, 0.9510564, -0.0052340995, -0.9512399, 0.30840716, -1.22, 39.76, 13.35)
+keep_aspect = 0
+current = true
+fov = 78.0
+size = 0.265
+far = 300.0
+
+[node name="msg" type="Label3D" parent="BG/camera" unique_id=1805501145]
+transform = Transform3D(0.9997422, 0.022093922, -0.0052341, -0.0117918495, 0.3082261, -0.95124006, -0.019403337, 0.95105654, 0.30840722, 0.059, 0.009, -22.175)
+pixel_size = 0.012
+billboard = 1
+modulate = Color(0.97121185, 0.3433088, 0.20172787, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Loading"
+font = ExtResource("7_e3io5")
+font_size = 120
+outline_size = 0
+
+[node name="2" type="Node3D" parent="BG" unique_id=1401999074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.06, 0)
+script = ExtResource("6_e3io5")
+mesh_instance = SubResource("BoxMesh_ljvqm")
+mesh_material = SubResource("StandardMaterial3D_ljvqm")
+size_x = 24
+size_y = 12
+gap = 2.9
+counts = 288
+
+[node name="@MeshInstance3D@126842" type="MeshInstance3D" parent="BG/2" unique_id=917127482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_e3io5")
+
+[node name="@MeshInstance3D@126843" type="MeshInstance3D" parent="BG/2" unique_id=926095721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_6hpi6")
+
+[node name="@MeshInstance3D@126844" type="MeshInstance3D" parent="BG/2" unique_id=1823389642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_81ra5")
+
+[node name="@MeshInstance3D@126845" type="MeshInstance3D" parent="BG/2" unique_id=1239988820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7b1tc")
+
+[node name="@MeshInstance3D@126846" type="MeshInstance3D" parent="BG/2" unique_id=671439669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_0c7iq")
+
+[node name="@MeshInstance3D@126847" type="MeshInstance3D" parent="BG/2" unique_id=438890710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_lgdwc")
+
+[node name="@MeshInstance3D@126848" type="MeshInstance3D" parent="BG/2" unique_id=1009838109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_uu8pa")
+
+[node name="@MeshInstance3D@126849" type="MeshInstance3D" parent="BG/2" unique_id=1667272323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_81087")
+
+[node name="@MeshInstance3D@126850" type="MeshInstance3D" parent="BG/2" unique_id=61702666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_wju1s")
+
+[node name="@MeshInstance3D@126851" type="MeshInstance3D" parent="BG/2" unique_id=274102269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_3nnqp")
+
+[node name="@MeshInstance3D@126852" type="MeshInstance3D" parent="BG/2" unique_id=671805545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_5qny4")
+
+[node name="@MeshInstance3D@126853" type="MeshInstance3D" parent="BG/2" unique_id=1094218896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.35, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ok43w")
+
+[node name="@MeshInstance3D@126854" type="MeshInstance3D" parent="BG/2" unique_id=1762484751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_0550s")
+
+[node name="@MeshInstance3D@126855" type="MeshInstance3D" parent="BG/2" unique_id=171789789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hi80b")
+
+[node name="@MeshInstance3D@126856" type="MeshInstance3D" parent="BG/2" unique_id=409688969]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_vjnnj")
+
+[node name="@MeshInstance3D@126857" type="MeshInstance3D" parent="BG/2" unique_id=61937801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rqo5k")
+
+[node name="@MeshInstance3D@126858" type="MeshInstance3D" parent="BG/2" unique_id=1251419517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dtt8p")
+
+[node name="@MeshInstance3D@126859" type="MeshInstance3D" parent="BG/2" unique_id=287798299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_yvu38")
+
+[node name="@MeshInstance3D@126860" type="MeshInstance3D" parent="BG/2" unique_id=1525027920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_c7evr")
+
+[node name="@MeshInstance3D@126861" type="MeshInstance3D" parent="BG/2" unique_id=1809378840]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_25tjh")
+
+[node name="@MeshInstance3D@126862" type="MeshInstance3D" parent="BG/2" unique_id=1775325153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_tkhkw")
+
+[node name="@MeshInstance3D@126863" type="MeshInstance3D" parent="BG/2" unique_id=370463009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_b2aax")
+
+[node name="@MeshInstance3D@126864" type="MeshInstance3D" parent="BG/2" unique_id=883573075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_5fgmp")
+
+[node name="@MeshInstance3D@126865" type="MeshInstance3D" parent="BG/2" unique_id=2134917783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.45, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_03w2t")
+
+[node name="@MeshInstance3D@126866" type="MeshInstance3D" parent="BG/2" unique_id=1769955804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_14j1k")
+
+[node name="@MeshInstance3D@126867" type="MeshInstance3D" parent="BG/2" unique_id=1952311426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_f6m1r")
+
+[node name="@MeshInstance3D@126868" type="MeshInstance3D" parent="BG/2" unique_id=936259452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_tmeg7")
+
+[node name="@MeshInstance3D@126869" type="MeshInstance3D" parent="BG/2" unique_id=1799317434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_a5ndl")
+
+[node name="@MeshInstance3D@126870" type="MeshInstance3D" parent="BG/2" unique_id=941288095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hicw7")
+
+[node name="@MeshInstance3D@126871" type="MeshInstance3D" parent="BG/2" unique_id=1846597645]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_a21b3")
+
+[node name="@MeshInstance3D@126872" type="MeshInstance3D" parent="BG/2" unique_id=573686781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_k3dey")
+
+[node name="@MeshInstance3D@126873" type="MeshInstance3D" parent="BG/2" unique_id=2147006960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ab28e")
+
+[node name="@MeshInstance3D@126874" type="MeshInstance3D" parent="BG/2" unique_id=1382113848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_qpuox")
+
+[node name="@MeshInstance3D@126875" type="MeshInstance3D" parent="BG/2" unique_id=137255946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_4kjok")
+
+[node name="@MeshInstance3D@126876" type="MeshInstance3D" parent="BG/2" unique_id=1934372141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_fl3hk")
+
+[node name="@MeshInstance3D@126877" type="MeshInstance3D" parent="BG/2" unique_id=2051458066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.55, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_eei13")
+
+[node name="@MeshInstance3D@126878" type="MeshInstance3D" parent="BG/2" unique_id=1955770466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_jrg2i")
+
+[node name="@MeshInstance3D@126879" type="MeshInstance3D" parent="BG/2" unique_id=1376398543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_innjd")
+
+[node name="@MeshInstance3D@126880" type="MeshInstance3D" parent="BG/2" unique_id=362087136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_8on1x")
+
+[node name="@MeshInstance3D@126881" type="MeshInstance3D" parent="BG/2" unique_id=667414612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_n05j4")
+
+[node name="@MeshInstance3D@126882" type="MeshInstance3D" parent="BG/2" unique_id=1008310589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rqlgl")
+
+[node name="@MeshInstance3D@126883" type="MeshInstance3D" parent="BG/2" unique_id=3954489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_a2wss")
+
+[node name="@MeshInstance3D@126884" type="MeshInstance3D" parent="BG/2" unique_id=1321439456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_n14h7")
+
+[node name="@MeshInstance3D@126885" type="MeshInstance3D" parent="BG/2" unique_id=1766788069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_r2bxe")
+
+[node name="@MeshInstance3D@126886" type="MeshInstance3D" parent="BG/2" unique_id=357179004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_vrmg5")
+
+[node name="@MeshInstance3D@126887" type="MeshInstance3D" parent="BG/2" unique_id=2107485351]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_uixxx")
+
+[node name="@MeshInstance3D@126888" type="MeshInstance3D" parent="BG/2" unique_id=426691602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_56vuc")
+
+[node name="@MeshInstance3D@126889" type="MeshInstance3D" parent="BG/2" unique_id=831865793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.65, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hj5oi")
+
+[node name="@MeshInstance3D@126890" type="MeshInstance3D" parent="BG/2" unique_id=1743676869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_k8sks")
+
+[node name="@MeshInstance3D@126891" type="MeshInstance3D" parent="BG/2" unique_id=1577494627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dyn48")
+
+[node name="@MeshInstance3D@126892" type="MeshInstance3D" parent="BG/2" unique_id=1872807317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_8h7yg")
+
+[node name="@MeshInstance3D@126893" type="MeshInstance3D" parent="BG/2" unique_id=597226967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_8ockx")
+
+[node name="@MeshInstance3D@126894" type="MeshInstance3D" parent="BG/2" unique_id=749705767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_i55he")
+
+[node name="@MeshInstance3D@126895" type="MeshInstance3D" parent="BG/2" unique_id=317507092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ng8r4")
+
+[node name="@MeshInstance3D@126896" type="MeshInstance3D" parent="BG/2" unique_id=926119383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_vpa5q")
+
+[node name="@MeshInstance3D@126897" type="MeshInstance3D" parent="BG/2" unique_id=467079546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_od7ev")
+
+[node name="@MeshInstance3D@126898" type="MeshInstance3D" parent="BG/2" unique_id=1143513002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_uen53")
+
+[node name="@MeshInstance3D@126899" type="MeshInstance3D" parent="BG/2" unique_id=51493941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_858j7")
+
+[node name="@MeshInstance3D@126900" type="MeshInstance3D" parent="BG/2" unique_id=1512040484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_wc3mi")
+
+[node name="@MeshInstance3D@126901" type="MeshInstance3D" parent="BG/2" unique_id=657766519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.75, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_o5xy2")
+
+[node name="@MeshInstance3D@126902" type="MeshInstance3D" parent="BG/2" unique_id=21630380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_cwgds")
+
+[node name="@MeshInstance3D@126903" type="MeshInstance3D" parent="BG/2" unique_id=1959084069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_qsrhe")
+
+[node name="@MeshInstance3D@126904" type="MeshInstance3D" parent="BG/2" unique_id=1154144991]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_k6k0v")
+
+[node name="@MeshInstance3D@126905" type="MeshInstance3D" parent="BG/2" unique_id=1634480232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dcj5n")
+
+[node name="@MeshInstance3D@126906" type="MeshInstance3D" parent="BG/2" unique_id=162238275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dgd4h")
+
+[node name="@MeshInstance3D@126907" type="MeshInstance3D" parent="BG/2" unique_id=1188020386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_618og")
+
+[node name="@MeshInstance3D@126908" type="MeshInstance3D" parent="BG/2" unique_id=1965875380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_2yxpp")
+
+[node name="@MeshInstance3D@126909" type="MeshInstance3D" parent="BG/2" unique_id=88122517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hc4tl")
+
+[node name="@MeshInstance3D@126910" type="MeshInstance3D" parent="BG/2" unique_id=1742738114]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ogpoo")
+
+[node name="@MeshInstance3D@126911" type="MeshInstance3D" parent="BG/2" unique_id=1848819943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_xmvvk")
+
+[node name="@MeshInstance3D@126912" type="MeshInstance3D" parent="BG/2" unique_id=1347261043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_6be6b")
+
+[node name="@MeshInstance3D@126913" type="MeshInstance3D" parent="BG/2" unique_id=238060115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.85, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rirx0")
+
+[node name="@MeshInstance3D@126914" type="MeshInstance3D" parent="BG/2" unique_id=1064199010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_wiaok")
+
+[node name="@MeshInstance3D@126915" type="MeshInstance3D" parent="BG/2" unique_id=1497753648]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_q0dog")
+
+[node name="@MeshInstance3D@126916" type="MeshInstance3D" parent="BG/2" unique_id=2117262806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ose27")
+
+[node name="@MeshInstance3D@126917" type="MeshInstance3D" parent="BG/2" unique_id=1927227491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_3hwu4")
+
+[node name="@MeshInstance3D@126918" type="MeshInstance3D" parent="BG/2" unique_id=256007147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_0pvd2")
+
+[node name="@MeshInstance3D@126919" type="MeshInstance3D" parent="BG/2" unique_id=606427076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_femfa")
+
+[node name="@MeshInstance3D@126920" type="MeshInstance3D" parent="BG/2" unique_id=1491832117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_u86t8")
+
+[node name="@MeshInstance3D@126921" type="MeshInstance3D" parent="BG/2" unique_id=1940350612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_qt813")
+
+[node name="@MeshInstance3D@126922" type="MeshInstance3D" parent="BG/2" unique_id=1359682471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7xnwa")
+
+[node name="@MeshInstance3D@126923" type="MeshInstance3D" parent="BG/2" unique_id=79952382]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_jbl3h")
+
+[node name="@MeshInstance3D@126924" type="MeshInstance3D" parent="BG/2" unique_id=1989934911]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_u70ht")
+
+[node name="@MeshInstance3D@126925" type="MeshInstance3D" parent="BG/2" unique_id=1928194027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.95, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_m6io0")
+
+[node name="@MeshInstance3D@126926" type="MeshInstance3D" parent="BG/2" unique_id=1074474341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_su26d")
+
+[node name="@MeshInstance3D@126927" type="MeshInstance3D" parent="BG/2" unique_id=269127905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_whgqy")
+
+[node name="@MeshInstance3D@126928" type="MeshInstance3D" parent="BG/2" unique_id=1987904255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ed03p")
+
+[node name="@MeshInstance3D@126929" type="MeshInstance3D" parent="BG/2" unique_id=1297948406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_tg1u1")
+
+[node name="@MeshInstance3D@126930" type="MeshInstance3D" parent="BG/2" unique_id=1023034486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_k1i3v")
+
+[node name="@MeshInstance3D@126931" type="MeshInstance3D" parent="BG/2" unique_id=690248346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_q2bkh")
+
+[node name="@MeshInstance3D@126932" type="MeshInstance3D" parent="BG/2" unique_id=1453114204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_bhos1")
+
+[node name="@MeshInstance3D@126933" type="MeshInstance3D" parent="BG/2" unique_id=1578532685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_mqtwa")
+
+[node name="@MeshInstance3D@126934" type="MeshInstance3D" parent="BG/2" unique_id=944805466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dqbkf")
+
+[node name="@MeshInstance3D@126935" type="MeshInstance3D" parent="BG/2" unique_id=1306062330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ba3so")
+
+[node name="@MeshInstance3D@126936" type="MeshInstance3D" parent="BG/2" unique_id=1832544097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_lywtk")
+
+[node name="@MeshInstance3D@126937" type="MeshInstance3D" parent="BG/2" unique_id=1178730430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.05, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ju770")
+
+[node name="@MeshInstance3D@126938" type="MeshInstance3D" parent="BG/2" unique_id=2013006188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_mbmfb")
+
+[node name="@MeshInstance3D@126939" type="MeshInstance3D" parent="BG/2" unique_id=1176673236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_81t1v")
+
+[node name="@MeshInstance3D@126940" type="MeshInstance3D" parent="BG/2" unique_id=1187383726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_xlqmb")
+
+[node name="@MeshInstance3D@126941" type="MeshInstance3D" parent="BG/2" unique_id=89581893]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ptvbb")
+
+[node name="@MeshInstance3D@126942" type="MeshInstance3D" parent="BG/2" unique_id=4640636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7x2uk")
+
+[node name="@MeshInstance3D@126943" type="MeshInstance3D" parent="BG/2" unique_id=2027036724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_t5qxx")
+
+[node name="@MeshInstance3D@126944" type="MeshInstance3D" parent="BG/2" unique_id=657118774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ttpra")
+
+[node name="@MeshInstance3D@126945" type="MeshInstance3D" parent="BG/2" unique_id=1457852825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_8wd55")
+
+[node name="@MeshInstance3D@126946" type="MeshInstance3D" parent="BG/2" unique_id=1817913379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_lifoo")
+
+[node name="@MeshInstance3D@126947" type="MeshInstance3D" parent="BG/2" unique_id=1013632007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ry8fp")
+
+[node name="@MeshInstance3D@126948" type="MeshInstance3D" parent="BG/2" unique_id=516835811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_cr86j")
+
+[node name="@MeshInstance3D@126949" type="MeshInstance3D" parent="BG/2" unique_id=1277996373]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.15, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ix37g")
+
+[node name="@MeshInstance3D@126950" type="MeshInstance3D" parent="BG/2" unique_id=346687224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_lae7x")
+
+[node name="@MeshInstance3D@126951" type="MeshInstance3D" parent="BG/2" unique_id=1397337512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_6b3bb")
+
+[node name="@MeshInstance3D@126952" type="MeshInstance3D" parent="BG/2" unique_id=634217119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_serm4")
+
+[node name="@MeshInstance3D@126953" type="MeshInstance3D" parent="BG/2" unique_id=589363237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_yacrt")
+
+[node name="@MeshInstance3D@126954" type="MeshInstance3D" parent="BG/2" unique_id=1235633388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_n0at6")
+
+[node name="@MeshInstance3D@126955" type="MeshInstance3D" parent="BG/2" unique_id=391793921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_80jsu")
+
+[node name="@MeshInstance3D@126956" type="MeshInstance3D" parent="BG/2" unique_id=150102856]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7y6nn")
+
+[node name="@MeshInstance3D@126957" type="MeshInstance3D" parent="BG/2" unique_id=1848640699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_v7yoc")
+
+[node name="@MeshInstance3D@126958" type="MeshInstance3D" parent="BG/2" unique_id=898525607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_6lqd8")
+
+[node name="@MeshInstance3D@126959" type="MeshInstance3D" parent="BG/2" unique_id=177455820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_8iuou")
+
+[node name="@MeshInstance3D@126960" type="MeshInstance3D" parent="BG/2" unique_id=560913770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_l3ee1")
+
+[node name="@MeshInstance3D@126961" type="MeshInstance3D" parent="BG/2" unique_id=1001262161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_xotmg")
+
+[node name="@MeshInstance3D@126962" type="MeshInstance3D" parent="BG/2" unique_id=1893213991]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_o3gud")
+
+[node name="@MeshInstance3D@126963" type="MeshInstance3D" parent="BG/2" unique_id=52394946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_n55r0")
+
+[node name="@MeshInstance3D@126964" type="MeshInstance3D" parent="BG/2" unique_id=352386994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_064cg")
+
+[node name="@MeshInstance3D@126965" type="MeshInstance3D" parent="BG/2" unique_id=1159793588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_koyfj")
+
+[node name="@MeshInstance3D@126966" type="MeshInstance3D" parent="BG/2" unique_id=976511026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_k84f8")
+
+[node name="@MeshInstance3D@126967" type="MeshInstance3D" parent="BG/2" unique_id=1706289557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dmg8l")
+
+[node name="@MeshInstance3D@126968" type="MeshInstance3D" parent="BG/2" unique_id=1741906252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7q0he")
+
+[node name="@MeshInstance3D@126969" type="MeshInstance3D" parent="BG/2" unique_id=2001801683]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfx7m")
+
+[node name="@MeshInstance3D@126970" type="MeshInstance3D" parent="BG/2" unique_id=96364211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_iax7b")
+
+[node name="@MeshInstance3D@126971" type="MeshInstance3D" parent="BG/2" unique_id=97294119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_8o2aq")
+
+[node name="@MeshInstance3D@126972" type="MeshInstance3D" parent="BG/2" unique_id=945227605]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rcdve")
+
+[node name="@MeshInstance3D@126973" type="MeshInstance3D" parent="BG/2" unique_id=1139739535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_j34tm")
+
+[node name="@MeshInstance3D@126974" type="MeshInstance3D" parent="BG/2" unique_id=565065092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_r2qpv")
+
+[node name="@MeshInstance3D@126975" type="MeshInstance3D" parent="BG/2" unique_id=1759926181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_5qo3m")
+
+[node name="@MeshInstance3D@126976" type="MeshInstance3D" parent="BG/2" unique_id=331628367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_twvih")
+
+[node name="@MeshInstance3D@126977" type="MeshInstance3D" parent="BG/2" unique_id=1186551548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_xdcex")
+
+[node name="@MeshInstance3D@126978" type="MeshInstance3D" parent="BG/2" unique_id=436532667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7sfko")
+
+[node name="@MeshInstance3D@126979" type="MeshInstance3D" parent="BG/2" unique_id=314357062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_icmo7")
+
+[node name="@MeshInstance3D@126980" type="MeshInstance3D" parent="BG/2" unique_id=554967639]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_fge01")
+
+[node name="@MeshInstance3D@126981" type="MeshInstance3D" parent="BG/2" unique_id=1800077201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_6s365")
+
+[node name="@MeshInstance3D@126982" type="MeshInstance3D" parent="BG/2" unique_id=459306086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_2dxsa")
+
+[node name="@MeshInstance3D@126983" type="MeshInstance3D" parent="BG/2" unique_id=1228655663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_jpttr")
+
+[node name="@MeshInstance3D@126984" type="MeshInstance3D" parent="BG/2" unique_id=1545465955]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_s7tna")
+
+[node name="@MeshInstance3D@126985" type="MeshInstance3D" parent="BG/2" unique_id=1439464811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_bmolj")
+
+[node name="@MeshInstance3D@126986" type="MeshInstance3D" parent="BG/2" unique_id=1426283870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hoywn")
+
+[node name="@MeshInstance3D@126987" type="MeshInstance3D" parent="BG/2" unique_id=1010146709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_2u6y8")
+
+[node name="@MeshInstance3D@126988" type="MeshInstance3D" parent="BG/2" unique_id=1845737480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_l143v")
+
+[node name="@MeshInstance3D@126989" type="MeshInstance3D" parent="BG/2" unique_id=1106558855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_5jewx")
+
+[node name="@MeshInstance3D@126990" type="MeshInstance3D" parent="BG/2" unique_id=1492138082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_bg653")
+
+[node name="@MeshInstance3D@126991" type="MeshInstance3D" parent="BG/2" unique_id=412915616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_musc0")
+
+[node name="@MeshInstance3D@126992" type="MeshInstance3D" parent="BG/2" unique_id=665641041]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmchn")
+
+[node name="@MeshInstance3D@126993" type="MeshInstance3D" parent="BG/2" unique_id=1424241024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_8rq02")
+
+[node name="@MeshInstance3D@126994" type="MeshInstance3D" parent="BG/2" unique_id=457918747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_e7k14")
+
+[node name="@MeshInstance3D@126995" type="MeshInstance3D" parent="BG/2" unique_id=2009827259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ber5n")
+
+[node name="@MeshInstance3D@126996" type="MeshInstance3D" parent="BG/2" unique_id=1782049544]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_y5v2r")
+
+[node name="@MeshInstance3D@126997" type="MeshInstance3D" parent="BG/2" unique_id=1220846580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_eqgj8")
+
+[node name="@MeshInstance3D@126998" type="MeshInstance3D" parent="BG/2" unique_id=833740228]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_gv0s3")
+
+[node name="@MeshInstance3D@126999" type="MeshInstance3D" parent="BG/2" unique_id=98688067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_46o4y")
+
+[node name="@MeshInstance3D@127000" type="MeshInstance3D" parent="BG/2" unique_id=364281831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_2ac1d")
+
+[node name="@MeshInstance3D@127001" type="MeshInstance3D" parent="BG/2" unique_id=1661493643]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_16yb2")
+
+[node name="@MeshInstance3D@127002" type="MeshInstance3D" parent="BG/2" unique_id=1922721563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_4icrh")
+
+[node name="@MeshInstance3D@127003" type="MeshInstance3D" parent="BG/2" unique_id=1224835537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_jdhsi")
+
+[node name="@MeshInstance3D@127004" type="MeshInstance3D" parent="BG/2" unique_id=1688588835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_wn1lb")
+
+[node name="@MeshInstance3D@127005" type="MeshInstance3D" parent="BG/2" unique_id=1450468817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_fxbjp")
+
+[node name="@MeshInstance3D@127006" type="MeshInstance3D" parent="BG/2" unique_id=52868803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_c55kb")
+
+[node name="@MeshInstance3D@127007" type="MeshInstance3D" parent="BG/2" unique_id=1371758623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_pm4od")
+
+[node name="@MeshInstance3D@127008" type="MeshInstance3D" parent="BG/2" unique_id=698630672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_75qwi")
+
+[node name="@MeshInstance3D@127009" type="MeshInstance3D" parent="BG/2" unique_id=772246136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_oi3cu")
+
+[node name="@MeshInstance3D@127010" type="MeshInstance3D" parent="BG/2" unique_id=159720452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ennji")
+
+[node name="@MeshInstance3D@127011" type="MeshInstance3D" parent="BG/2" unique_id=2079206759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_wn805")
+
+[node name="@MeshInstance3D@127012" type="MeshInstance3D" parent="BG/2" unique_id=1674597962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hcljl")
+
+[node name="@MeshInstance3D@127013" type="MeshInstance3D" parent="BG/2" unique_id=1979727992]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_skjff")
+
+[node name="@MeshInstance3D@127014" type="MeshInstance3D" parent="BG/2" unique_id=1792268461]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_o8uw0")
+
+[node name="@MeshInstance3D@127015" type="MeshInstance3D" parent="BG/2" unique_id=1144727592]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_wegn7")
+
+[node name="@MeshInstance3D@127016" type="MeshInstance3D" parent="BG/2" unique_id=1212426955]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_oudux")
+
+[node name="@MeshInstance3D@127017" type="MeshInstance3D" parent="BG/2" unique_id=103503225]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_d70o7")
+
+[node name="@MeshInstance3D@127018" type="MeshInstance3D" parent="BG/2" unique_id=695079563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_tncpf")
+
+[node name="@MeshInstance3D@127019" type="MeshInstance3D" parent="BG/2" unique_id=885519481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ukv21")
+
+[node name="@MeshInstance3D@127020" type="MeshInstance3D" parent="BG/2" unique_id=1478348598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_gxg6d")
+
+[node name="@MeshInstance3D@127021" type="MeshInstance3D" parent="BG/2" unique_id=2096288810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rguej")
+
+[node name="@MeshInstance3D@127022" type="MeshInstance3D" parent="BG/2" unique_id=1317405187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ef4nw")
+
+[node name="@MeshInstance3D@127023" type="MeshInstance3D" parent="BG/2" unique_id=1004537075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dh8ft")
+
+[node name="@MeshInstance3D@127024" type="MeshInstance3D" parent="BG/2" unique_id=788069862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rmi0p")
+
+[node name="@MeshInstance3D@127025" type="MeshInstance3D" parent="BG/2" unique_id=1085198000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ksolp")
+
+[node name="@MeshInstance3D@127026" type="MeshInstance3D" parent="BG/2" unique_id=1037150281]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_j3rn2")
+
+[node name="@MeshInstance3D@127027" type="MeshInstance3D" parent="BG/2" unique_id=1947615877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_2svuk")
+
+[node name="@MeshInstance3D@127028" type="MeshInstance3D" parent="BG/2" unique_id=1278635594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_utl3d")
+
+[node name="@MeshInstance3D@127029" type="MeshInstance3D" parent="BG/2" unique_id=849598166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_lq0yd")
+
+[node name="@MeshInstance3D@127030" type="MeshInstance3D" parent="BG/2" unique_id=1889898710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ds4jx")
+
+[node name="@MeshInstance3D@127031" type="MeshInstance3D" parent="BG/2" unique_id=416656805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_i38i4")
+
+[node name="@MeshInstance3D@127032" type="MeshInstance3D" parent="BG/2" unique_id=1160397534]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_h5f8e")
+
+[node name="@MeshInstance3D@127033" type="MeshInstance3D" parent="BG/2" unique_id=1913583712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_g6ve1")
+
+[node name="@MeshInstance3D@127034" type="MeshInstance3D" parent="BG/2" unique_id=862945854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_cjj6d")
+
+[node name="@MeshInstance3D@127035" type="MeshInstance3D" parent="BG/2" unique_id=1781511600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_qnoi4")
+
+[node name="@MeshInstance3D@127036" type="MeshInstance3D" parent="BG/2" unique_id=692910017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_uvllk")
+
+[node name="@MeshInstance3D@127037" type="MeshInstance3D" parent="BG/2" unique_id=2137035656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7eijw")
+
+[node name="@MeshInstance3D@127038" type="MeshInstance3D" parent="BG/2" unique_id=1316647414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hdto6")
+
+[node name="@MeshInstance3D@127039" type="MeshInstance3D" parent="BG/2" unique_id=2019336749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_l10ln")
+
+[node name="@MeshInstance3D@127040" type="MeshInstance3D" parent="BG/2" unique_id=2082436668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpvfb")
+
+[node name="@MeshInstance3D@127041" type="MeshInstance3D" parent="BG/2" unique_id=212983677]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_4c7aa")
+
+[node name="@MeshInstance3D@127042" type="MeshInstance3D" parent="BG/2" unique_id=1675817946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_qclj0")
+
+[node name="@MeshInstance3D@127043" type="MeshInstance3D" parent="BG/2" unique_id=98164083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_gvmi6")
+
+[node name="@MeshInstance3D@127044" type="MeshInstance3D" parent="BG/2" unique_id=860540781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_aqn6s")
+
+[node name="@MeshInstance3D@127045" type="MeshInstance3D" parent="BG/2" unique_id=1141203977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.05, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_b758o")
+
+[node name="@MeshInstance3D@127046" type="MeshInstance3D" parent="BG/2" unique_id=1459164584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfx22")
+
+[node name="@MeshInstance3D@127047" type="MeshInstance3D" parent="BG/2" unique_id=1134801896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_1nkao")
+
+[node name="@MeshInstance3D@127048" type="MeshInstance3D" parent="BG/2" unique_id=1973434967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_pngab")
+
+[node name="@MeshInstance3D@127049" type="MeshInstance3D" parent="BG/2" unique_id=938021204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_v1628")
+
+[node name="@MeshInstance3D@127050" type="MeshInstance3D" parent="BG/2" unique_id=424150344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hnyrh")
+
+[node name="@MeshInstance3D@127051" type="MeshInstance3D" parent="BG/2" unique_id=69233721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dd81q")
+
+[node name="@MeshInstance3D@127052" type="MeshInstance3D" parent="BG/2" unique_id=1332247083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_wu8rd")
+
+[node name="@MeshInstance3D@127053" type="MeshInstance3D" parent="BG/2" unique_id=486205030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_21qbr")
+
+[node name="@MeshInstance3D@127054" type="MeshInstance3D" parent="BG/2" unique_id=2055154545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_tytvq")
+
+[node name="@MeshInstance3D@127055" type="MeshInstance3D" parent="BG/2" unique_id=1312549061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_4i8tc")
+
+[node name="@MeshInstance3D@127056" type="MeshInstance3D" parent="BG/2" unique_id=10656860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rpk4j")
+
+[node name="@MeshInstance3D@127057" type="MeshInstance3D" parent="BG/2" unique_id=15152914]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.95, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ko4dl")
+
+[node name="@MeshInstance3D@127058" type="MeshInstance3D" parent="BG/2" unique_id=5778665]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_addo0")
+
+[node name="@MeshInstance3D@127059" type="MeshInstance3D" parent="BG/2" unique_id=666696732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dogx7")
+
+[node name="@MeshInstance3D@127060" type="MeshInstance3D" parent="BG/2" unique_id=31408265]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_5xjxy")
+
+[node name="@MeshInstance3D@127061" type="MeshInstance3D" parent="BG/2" unique_id=340356814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_4x657")
+
+[node name="@MeshInstance3D@127062" type="MeshInstance3D" parent="BG/2" unique_id=2131244817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_2chds")
+
+[node name="@MeshInstance3D@127063" type="MeshInstance3D" parent="BG/2" unique_id=1214759566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_m26e6")
+
+[node name="@MeshInstance3D@127064" type="MeshInstance3D" parent="BG/2" unique_id=1148072007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rlqf1")
+
+[node name="@MeshInstance3D@127065" type="MeshInstance3D" parent="BG/2" unique_id=862151785]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_stnus")
+
+[node name="@MeshInstance3D@127066" type="MeshInstance3D" parent="BG/2" unique_id=2015501883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_nh0rt")
+
+[node name="@MeshInstance3D@127067" type="MeshInstance3D" parent="BG/2" unique_id=942363386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_s3yy7")
+
+[node name="@MeshInstance3D@127068" type="MeshInstance3D" parent="BG/2" unique_id=1901790374]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_5txgh")
+
+[node name="@MeshInstance3D@127069" type="MeshInstance3D" parent="BG/2" unique_id=1139310908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_jdj3u")
+
+[node name="@MeshInstance3D@127070" type="MeshInstance3D" parent="BG/2" unique_id=1250901087]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_igpx0")
+
+[node name="@MeshInstance3D@127071" type="MeshInstance3D" parent="BG/2" unique_id=1653225419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_sadat")
+
+[node name="@MeshInstance3D@127072" type="MeshInstance3D" parent="BG/2" unique_id=370649488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_1dqrj")
+
+[node name="@MeshInstance3D@127073" type="MeshInstance3D" parent="BG/2" unique_id=871202814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_qnuxx")
+
+[node name="@MeshInstance3D@127074" type="MeshInstance3D" parent="BG/2" unique_id=512873821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_drsk6")
+
+[node name="@MeshInstance3D@127075" type="MeshInstance3D" parent="BG/2" unique_id=452293775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_m0rbd")
+
+[node name="@MeshInstance3D@127076" type="MeshInstance3D" parent="BG/2" unique_id=322014399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_emx53")
+
+[node name="@MeshInstance3D@127077" type="MeshInstance3D" parent="BG/2" unique_id=933144093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_uo5mn")
+
+[node name="@MeshInstance3D@127078" type="MeshInstance3D" parent="BG/2" unique_id=1969658810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ufye1")
+
+[node name="@MeshInstance3D@127079" type="MeshInstance3D" parent="BG/2" unique_id=1581416097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_l8ich")
+
+[node name="@MeshInstance3D@127080" type="MeshInstance3D" parent="BG/2" unique_id=191013155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_2q4ia")
+
+[node name="@MeshInstance3D@127081" type="MeshInstance3D" parent="BG/2" unique_id=366763094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.75, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_5mt4n")
+
+[node name="@MeshInstance3D@127082" type="MeshInstance3D" parent="BG/2" unique_id=2041363130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_qaq4n")
+
+[node name="@MeshInstance3D@127083" type="MeshInstance3D" parent="BG/2" unique_id=278312166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_72g0g")
+
+[node name="@MeshInstance3D@127084" type="MeshInstance3D" parent="BG/2" unique_id=1672768385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_18rd2")
+
+[node name="@MeshInstance3D@127085" type="MeshInstance3D" parent="BG/2" unique_id=1714168899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ikniw")
+
+[node name="@MeshInstance3D@127086" type="MeshInstance3D" parent="BG/2" unique_id=773577194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_bqjtd")
+
+[node name="@MeshInstance3D@127087" type="MeshInstance3D" parent="BG/2" unique_id=394403501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uq2i")
+
+[node name="@MeshInstance3D@127088" type="MeshInstance3D" parent="BG/2" unique_id=2106612924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_61anp")
+
+[node name="@MeshInstance3D@127089" type="MeshInstance3D" parent="BG/2" unique_id=556554713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_cewjf")
+
+[node name="@MeshInstance3D@127090" type="MeshInstance3D" parent="BG/2" unique_id=555089288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_mrrom")
+
+[node name="@MeshInstance3D@127091" type="MeshInstance3D" parent="BG/2" unique_id=1275458187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7sflu")
+
+[node name="@MeshInstance3D@127092" type="MeshInstance3D" parent="BG/2" unique_id=83658105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_6ar31")
+
+[node name="@MeshInstance3D@127093" type="MeshInstance3D" parent="BG/2" unique_id=1215935653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.65, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_cnyh1")
+
+[node name="@MeshInstance3D@127094" type="MeshInstance3D" parent="BG/2" unique_id=503819896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_m373l")
+
+[node name="@MeshInstance3D@127095" type="MeshInstance3D" parent="BG/2" unique_id=1825815978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_tns71")
+
+[node name="@MeshInstance3D@127096" type="MeshInstance3D" parent="BG/2" unique_id=1564220278]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_r1dek")
+
+[node name="@MeshInstance3D@127097" type="MeshInstance3D" parent="BG/2" unique_id=431182049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_jyula")
+
+[node name="@MeshInstance3D@127098" type="MeshInstance3D" parent="BG/2" unique_id=1969594855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_013wg")
+
+[node name="@MeshInstance3D@127099" type="MeshInstance3D" parent="BG/2" unique_id=1970451389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_worto")
+
+[node name="@MeshInstance3D@127100" type="MeshInstance3D" parent="BG/2" unique_id=48175942]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_vq8os")
+
+[node name="@MeshInstance3D@127101" type="MeshInstance3D" parent="BG/2" unique_id=872566943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_upbxk")
+
+[node name="@MeshInstance3D@127102" type="MeshInstance3D" parent="BG/2" unique_id=1905285962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_fdj41")
+
+[node name="@MeshInstance3D@127103" type="MeshInstance3D" parent="BG/2" unique_id=1030905146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_cuvd8")
+
+[node name="@MeshInstance3D@127104" type="MeshInstance3D" parent="BG/2" unique_id=2135027113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_1fhs6")
+
+[node name="@MeshInstance3D@127105" type="MeshInstance3D" parent="BG/2" unique_id=1216190030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.55, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_vjfhv")
+
+[node name="@MeshInstance3D@127106" type="MeshInstance3D" parent="BG/2" unique_id=1007966512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_hba5b")
+
+[node name="@MeshInstance3D@127107" type="MeshInstance3D" parent="BG/2" unique_id=1250893774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_sd27a")
+
+[node name="@MeshInstance3D@127108" type="MeshInstance3D" parent="BG/2" unique_id=1162931637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_cbqtq")
+
+[node name="@MeshInstance3D@127109" type="MeshInstance3D" parent="BG/2" unique_id=1484402510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_0kso2")
+
+[node name="@MeshInstance3D@127110" type="MeshInstance3D" parent="BG/2" unique_id=2038472618]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ejkxy")
+
+[node name="@MeshInstance3D@127111" type="MeshInstance3D" parent="BG/2" unique_id=796161770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ixkha")
+
+[node name="@MeshInstance3D@127112" type="MeshInstance3D" parent="BG/2" unique_id=1305122635]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_38q63")
+
+[node name="@MeshInstance3D@127113" type="MeshInstance3D" parent="BG/2" unique_id=1807953801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_m16hw")
+
+[node name="@MeshInstance3D@127114" type="MeshInstance3D" parent="BG/2" unique_id=1806240256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7pv86")
+
+[node name="@MeshInstance3D@127115" type="MeshInstance3D" parent="BG/2" unique_id=2096913194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_skubm")
+
+[node name="@MeshInstance3D@127116" type="MeshInstance3D" parent="BG/2" unique_id=454903825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_y3q6l")
+
+[node name="@MeshInstance3D@127117" type="MeshInstance3D" parent="BG/2" unique_id=490151039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.45, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_7pymf")
+
+[node name="@MeshInstance3D@127118" type="MeshInstance3D" parent="BG/2" unique_id=589160272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, -15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_na4ug")
+
+[node name="@MeshInstance3D@127119" type="MeshInstance3D" parent="BG/2" unique_id=633209549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, -13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_rsdkc")
+
+[node name="@MeshInstance3D@127120" type="MeshInstance3D" parent="BG/2" unique_id=864871215]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, -10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ot5qi")
+
+[node name="@MeshInstance3D@127121" type="MeshInstance3D" parent="BG/2" unique_id=799891247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, -7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ovp2p")
+
+[node name="@MeshInstance3D@127122" type="MeshInstance3D" parent="BG/2" unique_id=1941953588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, -4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ktwui")
+
+[node name="@MeshInstance3D@127123" type="MeshInstance3D" parent="BG/2" unique_id=44580287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, -1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_sy0ew")
+
+[node name="@MeshInstance3D@127124" type="MeshInstance3D" parent="BG/2" unique_id=1392017281]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, 1.45)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_bl0go")
+
+[node name="@MeshInstance3D@127125" type="MeshInstance3D" parent="BG/2" unique_id=1291350057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, 4.35)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_3rthu")
+
+[node name="@MeshInstance3D@127126" type="MeshInstance3D" parent="BG/2" unique_id=337608059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, 7.25)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_aoslv")
+
+[node name="@MeshInstance3D@127127" type="MeshInstance3D" parent="BG/2" unique_id=1402707837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, 10.15)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_8xuhw")
+
+[node name="@MeshInstance3D@127128" type="MeshInstance3D" parent="BG/2" unique_id=1624529999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, 13.05)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmwmt")
+
+[node name="@MeshInstance3D@127129" type="MeshInstance3D" parent="BG/2" unique_id=1180131716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.35, 0, 15.95)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_ljvqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_tp5t4")
+
+[node name="base" type="MeshInstance3D" parent="BG" unique_id=531894917]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_ljvqm")

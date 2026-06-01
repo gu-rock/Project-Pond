@@ -1,0 +1,17 @@
+# Godot
+.godot/
+
+# folders
+___note/
+__cloud/
+__x/
+addons/
+
+# Files to ignore
+.editorconfig
+.nomedia
+export_presets.cfg
+icon.svg
+icon.svg.import
+default_bus_layout.tres
+project.godot

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b3nuh5ff1mtvu"]
+
+[ext_resource type="Script" uid="uid://bxdtw8c74jv7u" path="res://_main/bg/_audio_dance.gd" id="1_esuac"]
+
+[node name="audio_dance" type="Node" unique_id=1935196752]
+script = ExtResource("1_esuac")

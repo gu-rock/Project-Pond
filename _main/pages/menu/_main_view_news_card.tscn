@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://bjyteeq3tq60t"]
+
+[ext_resource type="Theme" uid="uid://cc2lxowe1hiv5" path="res://__x/theme/theme_main.tres" id="1_5oxq7"]
+[ext_resource type="StyleBox" uid="uid://coty5g7togwp4" path="res://__x/theme/box_popup_panel.tres" id="2_ev2tv"]
+[ext_resource type="Script" uid="uid://lknmgehcpgms" path="res://_main/pages/menu/_main_view_news_card.gd" id="2_fnbpa"]
+[ext_resource type="Script" uid="uid://p32fujv4hoh4" path="res://__x/_ui/image_viewer/_ui_image_cloud.gd" id="6_ev2tv"]
+
+[node name="news" type="PanelContainer" unique_id=726789366]
+custom_minimum_size = Vector2(800, 240)
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 1
+theme = ExtResource("1_5oxq7")
+theme_override_styles/panel = ExtResource("2_ev2tv")
+script = ExtResource("2_fnbpa")
+
+[node name="cover" type="TextureRect" parent="." unique_id=661787539]
+self_modulate = Color(0.78431374, 0.78431374, 0.78431374, 1)
+custom_minimum_size = Vector2(330, 220)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+expand_mode = 3
+script = ExtResource("6_ev2tv")
+
+[node name="dots" type="HBoxContainer" parent="cover" unique_id=534043321]
+layout_mode = 1
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 18.0
+offset_bottom = 18.0
+
+[node name="content" type="VBoxContainer" parent="." unique_id=835470410]
+custom_minimum_size = Vector2(400, 280)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="time" type="Label" parent="content" unique_id=1649332461]
+self_modulate = Color(0.8627451, 0.8627451, 0.8627451, 1)
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 18
+text = "--/--/--"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="header" type="Label" parent="content" unique_id=727389653]
+custom_minimum_size = Vector2(400, 48)
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0.8627451, 0.8627451, 0.8627451, 1)
+theme_override_font_sizes/font_size = 30
+text = "awfawfawfawf"
+autowrap_mode = 3
+
+[node name="msg" type="Label" parent="content" unique_id=1817223056]
+self_modulate = Color(0.8627451, 0.8627451, 0.8627451, 1)
+custom_minimum_size = Vector2(400, 120)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+mouse_filter = 1
+text = "   awfaw fawf wafaw fwaf awf wa dawdawd awdawdd wdawd awdawd 
+wadawd dawdawdawdawd dawdawdadwd dsaw ddaw"
+autowrap_mode = 3
+
+[node name="opts" type="HBoxContainer" parent="content" unique_id=1824005282]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+alignment = 2

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cm4yd3nadn51u"]
+
+[ext_resource type="Script" uid="uid://msd2hrb7kgnm" path="res://_main/pages/update/_main_update_note.gd" id="1_ilb2h"]
+[ext_resource type="Theme" uid="uid://cc2lxowe1hiv5" path="res://__x/theme/theme_main.tres" id="1_sx5iq"]
+[ext_resource type="StyleBox" uid="uid://coty5g7togwp4" path="res://__x/theme/box_popup_panel.tres" id="2_a3euq"]
+
+[node name="note" type="PanelContainer" unique_id=1305302345]
+custom_minimum_size = Vector2(600, 240)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme = ExtResource("1_sx5iq")
+theme_override_styles/panel = ExtResource("2_a3euq")
+script = ExtResource("1_ilb2h")
+
+[node name="msg" type="Label" parent="." unique_id=1322990277]
+custom_minimum_size = Vector2(480, 120)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 20
+text = "awfawfawfawf
+	- afawfawfawf
+	- aWAWFF
+AWDFWAD
+    - awfawf"
+autowrap_mode = 1

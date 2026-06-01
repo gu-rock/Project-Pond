@@ -1,0 +1,875 @@
+[gd_scene format=3 uid="uid://mqh1kn8v7232"]
+
+[ext_resource type="Theme" uid="uid://cc2lxowe1hiv5" path="res://__x/theme/theme_main.tres" id="1_0emtb"]
+[ext_resource type="Script" uid="uid://c5kh6yqm3qvrn" path="res://_main/pages/menu/_main_menu.gd" id="2_vpqo8"]
+[ext_resource type="PackedScene" uid="uid://dp83yggwgpqxn" path="res://__x/_ui/_buttons/_ui_button_text_l.tscn" id="4_h8g8o"]
+[ext_resource type="Script" uid="uid://d1r5moiv50d7o" path="res://_main/pages/menu/_main_view_games.gd" id="5_dqwa2"]
+[ext_resource type="Script" uid="uid://ddp48b14gsi2f" path="res://_main/pages/menu/_main_view_news.gd" id="5_fcg25"]
+[ext_resource type="Script" uid="uid://bfm0asgbnjsgc" path="res://_main/pages/menu/_main_view_library.gd" id="6_dtd7w"]
+[ext_resource type="PackedScene" uid="uid://gp4q11y2207k" path="res://__x/_ui/_buttons/_ui_button_text_m.tscn" id="6_q81n5"]
+[ext_resource type="PackedScene" uid="uid://dk0icow1720j2" path="res://__x/_ui/settings_screen/_menu_settings.tscn" id="6_vpqo8"]
+[ext_resource type="PackedScene" uid="uid://bjyteeq3tq60t" path="res://_main/pages/menu/_main_view_news_card.tscn" id="7_3usig"]
+[ext_resource type="Script" uid="uid://cyhki710aqnjt" path="res://_main/pages/menu/_main_view_account.gd" id="7_h8g8o"]
+[ext_resource type="Script" uid="uid://ci2v2fnny85fi" path="res://_main/pages/menu/_main_game_detail.gd" id="12_p380l"]
+[ext_resource type="PackedScene" uid="uid://dhxr36qlfj730" path="res://__x/_ui/_buttons/_ui_button_text_s.tscn" id="13_q81n5"]
+[ext_resource type="Script" uid="uid://bkvld5uejmndd" path="res://_main/pages/menu/_main_game_download.gd" id="14_3k0rt"]
+[ext_resource type="Script" uid="uid://cn6l0w0r6jo7a" path="res://_main/pages/menu/_main_game_options.gd" id="14_p380l"]
+[ext_resource type="Script" uid="uid://p32fujv4hoh4" path="res://__x/_ui/image_viewer/_ui_image_cloud.gd" id="14_rdbhh"]
+[ext_resource type="StyleBox" uid="uid://coty5g7togwp4" path="res://__x/theme/box_popup_panel.tres" id="16_446hd"]
+[ext_resource type="PackedScene" uid="uid://c6qa1maohsc3n" path="res://__x/_ui/image_viewer/ui_screenshots.tscn" id="16_hayg7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t1m05"]
+content_margin_left = 2.0
+content_margin_right = 2.0
+bg_color = Color(0.9411765, 0.9411765, 0.9411765, 0.47058824)
+skew = Vector2(0.12, 0)
+corner_radius_top_left = 9
+corner_radius_top_right = 3
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fv564"]
+bg_color = Color(0.9411765, 0.9411765, 0.9411765, 0.23529412)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hayg7"]
+bg_color = Color(0.047058824, 0.047058824, 0.047058824, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3k0rt"]
+bg_color = Color(0.047058824, 0.047058824, 0.047058824, 0.9411765)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3usig"]
+bg_color = Color(0.47058824, 0.47058824, 0.47058824, 1)
+skew = Vector2(0.12, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p380l"]
+bg_color = Color(0.7058824, 0.1764706, 0.10980392, 1)
+skew = Vector2(0.12, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="menu" type="Control" unique_id=413441480]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_0emtb")
+script = ExtResource("2_vpqo8")
+
+[node name="topbar" type="Control" parent="." unique_id=1628802191]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+metadata/_edit_lock_ = true
+
+[node name="l_bar" type="HBoxContainer" parent="topbar" unique_id=2092744597]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -26.0
+offset_right = 160.0
+offset_bottom = 26.0
+grow_vertical = 2
+
+[node name="b_me" parent="topbar/l_bar" unique_id=1793379690 instance=ExtResource("4_h8g8o")]
+layout_mode = 2
+
+[node name="r_bar" type="HBoxContainer" parent="topbar" unique_id=670948502]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -286.99957
+offset_top = -22.5
+offset_right = -8.999573
+offset_bottom = 22.5
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 2
+
+[node name="b_news" parent="topbar/r_bar" unique_id=1391520367 instance=ExtResource("4_h8g8o")]
+layout_mode = 2
+toggle = true
+
+[node name="b_games" parent="topbar/r_bar" unique_id=1011355070 instance=ExtResource("4_h8g8o")]
+layout_mode = 2
+toggle = true
+
+[node name="b_library" parent="topbar/r_bar" unique_id=2071651254 instance=ExtResource("4_h8g8o")]
+layout_mode = 2
+toggle = true
+
+[node name="b_account" parent="topbar/r_bar" unique_id=1476701238 instance=ExtResource("4_h8g8o")]
+layout_mode = 2
+toggle = true
+
+[node name="b_settings" parent="topbar/r_bar" unique_id=1495572299 instance=ExtResource("4_h8g8o")]
+layout_mode = 2
+toggle = true
+
+[node name="_s" type="VSeparator" parent="topbar/r_bar" unique_id=1761120296]
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxFlat_t1m05")
+
+[node name="b_exit" parent="topbar/r_bar" unique_id=533184422 instance=ExtResource("4_h8g8o")]
+layout_mode = 2
+
+[node name="_line" type="Panel" parent="topbar" unique_id=299844213]
+custom_minimum_size = Vector2(0, 1.2)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 9.0
+offset_bottom = 10.200005
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fv564")
+
+[node name="news" type="ScrollContainer" parent="." unique_id=392107979 node_paths=PackedStringArray("cards")]
+visible = false
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_fcg25")
+cards = [NodePath("list/news_1"), NodePath("list/news_2"), NodePath("list/news_3"), NodePath("list/news_4"), NodePath("list/news_5")]
+metadata/_edit_lock_ = true
+
+[node name="list" type="VBoxContainer" parent="news" unique_id=1840816802]
+custom_minimum_size = Vector2(600, 240)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+alignment = 1
+
+[node name="offline" type="PanelContainer" parent="news/list" unique_id=1656282230]
+custom_minimum_size = Vector2(480, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = ExtResource("16_446hd")
+
+[node name="box" type="VBoxContainer" parent="news/list/offline" unique_id=1045286280]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="header" type="Label" parent="news/list/offline/box" unique_id=1125151516]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+theme_override_font_sizes/font_size = 36
+text = "KEY_NO_INTERNET"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="_s" type="Control" parent="news/list/offline/box" unique_id=1858177540]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="b_retry" parent="news/list/offline/box" unique_id=1568318629 instance=ExtResource("6_q81n5")]
+layout_mode = 2
+
+[node name="news_1" parent="news/list" unique_id=726789366 instance=ExtResource("7_3usig")]
+layout_mode = 2
+
+[node name="_s2" type="Control" parent="news/list" unique_id=375391197]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="news_2" parent="news/list" unique_id=1659847168 instance=ExtResource("7_3usig")]
+layout_mode = 2
+
+[node name="_s3" type="Control" parent="news/list" unique_id=1658101548]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="news_3" parent="news/list" unique_id=1480437686 instance=ExtResource("7_3usig")]
+layout_mode = 2
+
+[node name="_s4" type="Control" parent="news/list" unique_id=1806698970]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="news_4" parent="news/list" unique_id=454970306 instance=ExtResource("7_3usig")]
+layout_mode = 2
+
+[node name="_s5" type="Control" parent="news/list" unique_id=1855196233]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="news_5" parent="news/list" unique_id=857723788 instance=ExtResource("7_3usig")]
+layout_mode = 2
+
+[node name="_s6" type="Control" parent="news/list" unique_id=1860134515]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="games" type="ScrollContainer" parent="." unique_id=1287991235]
+visible = false
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_dqwa2")
+metadata/_edit_lock_ = true
+
+[node name="grid" type="GridContainer" parent="games" unique_id=189693694]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="empty" type="Label" parent="games/grid" unique_id=555489825]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+theme_override_font_sizes/font_size = 36
+text = "KEY_NO_GAMES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="library" type="ScrollContainer" parent="." unique_id=144177140]
+visible = false
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_dtd7w")
+metadata/_edit_lock_ = true
+
+[node name="grid" type="GridContainer" parent="library" unique_id=1289723136]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="offline" type="PanelContainer" parent="library/grid" unique_id=519864510]
+custom_minimum_size = Vector2(480, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = ExtResource("16_446hd")
+
+[node name="box" type="VBoxContainer" parent="library/grid/offline" unique_id=335406488]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="header" type="Label" parent="library/grid/offline/box" unique_id=1359645934]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+theme_override_font_sizes/font_size = 36
+text = "KEY_NO_INTERNET"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="_s" type="Control" parent="library/grid/offline/box" unique_id=169103601]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="b_retry" parent="library/grid/offline/box" unique_id=375972488 instance=ExtResource("6_q81n5")]
+layout_mode = 2
+
+[node name="account" type="ScrollContainer" parent="." unique_id=1121506502]
+visible = false
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_h8g8o")
+metadata/_edit_lock_ = true
+
+[node name="list" type="VBoxContainer" parent="account" unique_id=763757854]
+custom_minimum_size = Vector2(600, 240)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+alignment = 1
+
+[node name="soon" type="Label" parent="account/list" unique_id=467524012]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+theme_override_font_sizes/font_size = 36
+text = "KEY_NOT_AVAILABLE
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="settings" parent="." unique_id=1648203321 instance=ExtResource("6_vpqo8")]
+visible = false
+layout_mode = 1
+
+[node name="detail" type="Panel" parent="." unique_id=960334661]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.18100001
+anchor_top = -0.33400002
+anchor_right = 1.1810001
+anchor_bottom = 1.3340001
+offset_left = 0.008010864
+offset_top = -0.0799942
+offset_right = -0.008056641
+offset_bottom = 0.079956055
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hayg7")
+script = ExtResource("12_p380l")
+metadata/_edit_lock_ = true
+
+[node name="border" type="Control" parent="detail" unique_id=1017322645]
+layout_mode = 1
+anchor_left = 0.133
+anchor_top = 0.2
+anchor_right = 0.86700004
+anchor_bottom = 0.8
+offset_left = -0.117996216
+offset_top = 0.19999695
+offset_right = 0.11798096
+offset_bottom = -0.2000122
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="topbar" type="Control" parent="detail/border" unique_id=1453173099]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="title" type="Label" parent="detail/border/topbar" unique_id=1749721262]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -36.5
+offset_right = 96.0
+offset_bottom = 36.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.6409256, 0.6409256, 0.6409256, 1)
+theme_override_font_sizes/font_size = 48
+text = "Title"
+vertical_alignment = 1
+
+[node name="r_bar" type="HBoxContainer" parent="detail/border/topbar" unique_id=1536889581]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -286.99957
+offset_top = -22.5
+offset_right = -8.999573
+offset_bottom = 22.5
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 2
+
+[node name="b_download" parent="detail/border/topbar/r_bar" unique_id=465569052 instance=ExtResource("4_h8g8o")]
+visible = false
+layout_mode = 2
+
+[node name="_s" type="VSeparator" parent="detail/border/topbar/r_bar" unique_id=580135274]
+visible = false
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxFlat_t1m05")
+
+[node name="b_close" parent="detail/border/topbar/r_bar" unique_id=1982454547 instance=ExtResource("4_h8g8o")]
+layout_mode = 2
+
+[node name="_line" type="Panel" parent="detail/border/topbar" unique_id=113117834]
+custom_minimum_size = Vector2(0, 1.2)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 9.0
+offset_bottom = 10.200005
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fv564")
+
+[node name="content" type="ScrollContainer" parent="detail/border" unique_id=1861356065]
+custom_minimum_size = Vector2(840, 360)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 90.0
+offset_right = -28.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="list" type="VBoxContainer" parent="detail/border/content" unique_id=918755326]
+custom_minimum_size = Vector2(820, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="info" type="Control" parent="detail/border/content/list" unique_id=927908388]
+custom_minimum_size = Vector2(840, 360)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+
+[node name="cover" type="TextureRect" parent="detail/border/content/list/info" unique_id=1662342866]
+self_modulate = Color(0.78431374, 0.78431374, 0.78431374, 1)
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -150.0
+offset_right = 300.0
+offset_bottom = 150.0
+grow_vertical = 2
+expand_mode = 2
+stretch_mode = 5
+script = ExtResource("14_rdbhh")
+
+[node name="dots" type="HBoxContainer" parent="detail/border/content/list/info/cover" unique_id=1152537179]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 18.0
+offset_bottom = 18.0
+
+[node name="detail" type="VBoxContainer" parent="detail/border/content/list/info" unique_id=1551479902]
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -150.0
+offset_bottom = 150.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="version" type="Label" parent="detail/border/content/list/info/detail" unique_id=165428784]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "KEY_VERSION"
+vertical_alignment = 1
+
+[node name="version_v" type="Label" parent="detail/border/content/list/info/detail/version" unique_id=1962008067]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -382.0
+offset_top = -28.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "awfawfawawgawgawg"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="date_release" type="Label" parent="detail/border/content/list/info/detail" unique_id=226817458]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "KEY_DATE_RELEASE"
+vertical_alignment = 1
+
+[node name="date_release_v" type="Label" parent="detail/border/content/list/info/detail/date_release" unique_id=720579292]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -382.0
+offset_top = -28.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "awfawfawawgawgawg"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="tags" type="Label" parent="detail/border/content/list/info/detail" unique_id=1067947570]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "KEY_TAGS"
+vertical_alignment = 1
+
+[node name="tags_v" type="Label" parent="detail/border/content/list/info/detail/tags" unique_id=1538089878]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -382.0
+offset_top = -28.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="downloads" type="Label" parent="detail/border/content/list/info/detail" unique_id=1320693596]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "KEY_DOWNLOADS"
+vertical_alignment = 1
+
+[node name="downloads_v" type="Label" parent="detail/border/content/list/info/detail/downloads" unique_id=1578180369]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -382.0
+offset_top = -28.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "awfawfawawgawgawg"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="_spc3" type="Control" parent="detail/border/content/list" unique_id=1692296207]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="about" type="Label" parent="detail/border/content/list" unique_id=58882125]
+custom_minimum_size = Vector2(760, 36)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 30
+text = "afgwaesegsegsegselm "
+autowrap_mode = 1
+
+[node name="_spc2" type="Control" parent="detail/border/content/list" unique_id=1078729375]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="screenshots" parent="detail/border/content/list" unique_id=513212915 instance=ExtResource("16_hayg7")]
+layout_mode = 2
+expand_mode = 3
+stretch_mode = 4
+
+[node name="_spc" type="Control" parent="detail/border/content/list" unique_id=1160376648]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 1
+
+[node name="options" type="Panel" parent="." unique_id=524501899]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -139.0
+offset_top = -127.0
+offset_right = 139.0
+offset_bottom = 127.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3k0rt")
+script = ExtResource("14_p380l")
+metadata/_edit_lock_ = true
+
+[node name="confirm" type="PanelContainer" parent="options" unique_id=2018943657]
+visible = false
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = -72.5
+offset_right = 170.0
+offset_bottom = 72.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("16_446hd")
+
+[node name="list" type="VBoxContainer" parent="options/confirm" unique_id=1578652645]
+layout_mode = 2
+alignment = 1
+
+[node name="header" type="Label" parent="options/confirm/list" unique_id=1177931024]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+theme_override_font_sizes/font_size = 36
+text = "KEY_QUIT_CONFIRM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="_s" type="Control" parent="options/confirm/list" unique_id=683467582]
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+
+[node name="opts" type="HBoxContainer" parent="options/confirm/list" unique_id=1598448050]
+layout_mode = 2
+alignment = 2
+
+[node name="b_yes" parent="options/confirm/list/opts" unique_id=1356690895 instance=ExtResource("6_q81n5")]
+layout_mode = 2
+
+[node name="b_no" parent="options/confirm/list/opts" unique_id=4577305 instance=ExtResource("6_q81n5")]
+layout_mode = 2
+
+[node name="menu" type="PanelContainer" parent="options" unique_id=77573125]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.5
+offset_top = -118.5
+offset_right = 49.5
+offset_bottom = 118.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("16_446hd")
+
+[node name="list" type="VBoxContainer" parent="options/menu" unique_id=1102881829]
+layout_mode = 2
+alignment = 1
+
+[node name="_spc" type="Control" parent="options/menu/list" unique_id=1642275697]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 1
+
+[node name="b_delete_save" parent="options/menu/list" unique_id=2127982153 instance=ExtResource("6_q81n5")]
+layout_mode = 2
+
+[node name="_spc2" type="Control" parent="options/menu/list" unique_id=353863544]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 1
+
+[node name="b_delete_game" parent="options/menu/list" unique_id=203749090 instance=ExtResource("6_q81n5")]
+layout_mode = 2
+
+[node name="_spc3" type="Control" parent="options/menu/list" unique_id=180542396]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 1
+
+[node name="b_close" parent="options/menu/list" unique_id=999883339 instance=ExtResource("6_q81n5")]
+layout_mode = 2
+
+[node name="_spc4" type="Control" parent="options/menu/list" unique_id=329693308]
+process_mode = 4
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 1
+
+[node name="download" type="Panel" parent="." unique_id=1759094257]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -139.0
+offset_top = -127.0
+offset_right = 139.0
+offset_bottom = 127.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3k0rt")
+script = ExtResource("14_3k0rt")
+metadata/_edit_lock_ = true
+
+[node name="panel_download" type="PanelContainer" parent="download" unique_id=2074224894]
+visible = false
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("16_446hd")
+
+[node name="list" type="VBoxContainer" parent="download/panel_download" unique_id=71301695]
+layout_mode = 2
+alignment = 1
+
+[node name="header" type="Label" parent="download/panel_download/list" unique_id=960721323]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.8627451, 0.8627451, 0.8627451, 1)
+theme_override_font_sizes/font_size = 30
+text = "KEY_DOWNLOADING"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="detail" type="Label" parent="download/panel_download/list" unique_id=936436491]
+layout_mode = 2
+theme = ExtResource("1_0emtb")
+theme_override_colors/font_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+theme_override_font_sizes/font_size = 18
+text = "1211/81515"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="box" type="HBoxContainer" parent="download/panel_download/list" unique_id=368923094]
+layout_mode = 2
+alignment = 1
+
+[node name="progress" type="ProgressBar" parent="download/panel_download/list/box" unique_id=650376263]
+custom_minimum_size = Vector2(360, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.7058824, 0.7058824, 0.7058824, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/background = SubResource("StyleBoxFlat_3usig")
+theme_override_styles/fill = SubResource("StyleBoxFlat_p380l")
+step = 0.1
+value = 36.5
+
+[node name="_s" type="Control" parent="download/panel_download/list/box" unique_id=1771412550]
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+
+[node name="b_cancel" parent="download/panel_download/list/box" unique_id=1308092204 instance=ExtResource("13_q81n5")]
+layout_mode = 2
+
+[node name="panel_result" type="PanelContainer" parent="download" unique_id=1358399853]
+visible = false
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -212.0
+offset_top = -69.0
+offset_right = 212.0
+offset_bottom = 69.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("16_446hd")
+
+[node name="list" type="VBoxContainer" parent="download/panel_result" unique_id=1106050810]
+layout_mode = 2
+alignment = 1
+
+[node name="header" type="Label" parent="download/panel_result/list" unique_id=540314118]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.8627451, 0.8627451, 0.8627451, 1)
+theme_override_font_sizes/font_size = 30
+text = "KEY_DOWNLOAD_FAILED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="_s" type="Control" parent="download/panel_result/list" unique_id=1924143862]
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+
+[node name="b_close" parent="download/panel_result/list" unique_id=1952140212 instance=ExtResource("13_q81n5")]
+layout_mode = 2

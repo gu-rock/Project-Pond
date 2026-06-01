@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://yvq6cqeutyrq"]
+
+[ext_resource type="Theme" uid="uid://cc2lxowe1hiv5" path="res://__x/theme/theme_main.tres" id="1_dh1tv"]
+[ext_resource type="Script" uid="uid://cx5eiv3mj5ic2" path="res://_main/pages/update/_main_update.gd" id="2_w0ul5"]
+[ext_resource type="PackedScene" uid="uid://cm4yd3nadn51u" path="res://_main/pages/update/_main_update_note.tscn" id="3_ra1a0"]
+[ext_resource type="PackedScene" uid="uid://dp83yggwgpqxn" path="res://__x/_ui/_buttons/_ui_button_text_l.tscn" id="4_82x20"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_82x20"]
+content_margin_left = 2.0
+content_margin_right = 2.0
+bg_color = Color(0.9411765, 0.9411765, 0.9411765, 0.47058824)
+skew = Vector2(0.12, 0)
+corner_radius_top_left = 9
+corner_radius_top_right = 3
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jblur"]
+bg_color = Color(0.9411765, 0.9411765, 0.9411765, 0.23529412)
+
+[node name="update" type="Control" unique_id=1357201563]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_dh1tv")
+script = ExtResource("2_w0ul5")
+_note_pack = ExtResource("3_ra1a0")
+
+[node name="topbar" type="Control" parent="." unique_id=1214569903]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="l_bar" type="HBoxContainer" parent="topbar" unique_id=213344894]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 12.0
+offset_top = -26.0
+offset_right = 70.00003
+offset_bottom = 26.0
+grow_vertical = 2
+
+[node name="b_offline" parent="topbar/l_bar" unique_id=342018481 instance=ExtResource("4_82x20")]
+layout_mode = 2
+
+[node name="_s" type="VSeparator" parent="topbar/l_bar" unique_id=142631634]
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/separator = SubResource("StyleBoxFlat_82x20")
+
+[node name="header" type="Label" parent="topbar/l_bar" unique_id=2041709724]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 30
+text = "Update Avalable"
+vertical_alignment = 1
+
+[node name="r_bar" type="HBoxContainer" parent="topbar" unique_id=1510454867]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -286.99957
+offset_top = -22.5
+offset_right = -8.999573
+offset_bottom = 22.5
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 2
+
+[node name="download" type="Label" parent="topbar/r_bar" unique_id=1215559291]
+layout_mode = 2
+text = "KEY_DOWNLOAD_FROM"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="_s" type="Control" parent="topbar/r_bar" unique_id=1091374039]
+custom_minimum_size = Vector2(9, 0)
+layout_mode = 2
+
+[node name="_line" type="Panel" parent="topbar" unique_id=918852515]
+custom_minimum_size = Vector2(0, 1.2)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 9.0
+offset_bottom = 10.200005
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jblur")
+
+[node name="content" type="ScrollContainer" parent="." unique_id=1908124433]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="list" type="VBoxContainer" parent="content" unique_id=82873099]
+custom_minimum_size = Vector2(690, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
